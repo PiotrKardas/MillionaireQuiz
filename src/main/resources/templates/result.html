@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Milionerzy</title>
+    <link th:href="@{style.css}" href="../static/style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+
+        $("document").ready(function($) {
+               $(".main").delay(100).show("fade",1000);
+ });
+    </script>
+</head>
+<body class="stars">
+<div class="twinkling">
+<center class="main">
+<h1>Wynik</h1>
+<p class="p2" th:text="${amountOfCorrect}"></p>
+<p class="p2" th:text="${correctPercentage}"></p>
+<p class="p2" th:text="${message}"></p></br></br>
+<form action="/" method="get">
+    <input class="button2" type="submit" value="Nowa gra">
+</form>
+</center>
+</div>
+</body>
+</html>
