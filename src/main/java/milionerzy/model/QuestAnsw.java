@@ -9,7 +9,8 @@ import java.util.List;
     public class QuestAnsw {
         private List<String> questionAnswers = new ArrayList<>();
 
-        public QuestAnsw(){}
+        public QuestAnsw(){
+        }
 
     public List<String> getQuestionAnswers() {
         return questionAnswers;
